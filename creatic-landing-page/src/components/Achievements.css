@@ -1,0 +1,29 @@
+.achievements {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(90deg, #0d0d0d, #1a1a1a);
+    padding: 40px 0;
+  }
+  
+  .achievement-item {
+    text-align: center;
+    color: white;
+  }
+  
+  .achievement-item .icon {
+    font-size: 50px;
+    color: #4a90e2;
+    margin-bottom: 10px;
+  }
+  
+  .achievement-item h3 {
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  .achievement-item p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #8c8c8c;
+  }
+  

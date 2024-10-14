@@ -1,0 +1,120 @@
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    background-color: #0a0a0a;
+    position: relative;
+}
+
+
+.left-image {
+    background-image: url('../assets/leftw.png');
+}
+.right-image{
+    background-image: url('../assets/rightw.png'); 
+}
+.left-image,
+.right-image {
+    width: 40%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+.testimonial-container {
+    width: 400px;
+    padding: 100px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.testimonial-content {
+    text-align: center;
+    color: black;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.section-title span {
+    color: rgba(109, 149, 252, 1); 
+}
+.section-subtitle {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.testimonial-box {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.testimonial-text {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.author-i {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.author-info {
+    text-align: left;
+}
+
+.author-info h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.author-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #888;
+}
+
+.quote-icon {
+    font-size: 30px;
+    color: rgba(109, 149, 252, 1);
+    margin-left: auto;
+}
+
+.view-testimonials-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid rgba(109, 149, 252, 1);
+    color: rgba(109, 149, 252, 1);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.view-testimonials-btn:hover {
+    background-color: rgba(109, 149, 252, 1);
+    color: #ffffff;
+}
