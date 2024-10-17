@@ -1,3 +1,4 @@
+/* Base styles for the footer */
 .footer {
     background-color: #0a0a0a;
     color: #bbb;
@@ -5,6 +6,7 @@
     text-align: left;
 }
 
+/* Container for flexibility and responsiveness */
 .container {
     display: flex;
     justify-content: space-between;
@@ -12,13 +14,16 @@
     flex-wrap: wrap;
 }
 
+/* Contact and form layout on large screens */
 .footer-top {
     display: flex;
     justify-content: space-between;
     width: 100%;
     gap: 40px;
+    flex-wrap: wrap; /* To allow wrapping on smaller screens */
 }
 
+/* Contact info section */
 .footer-contact {
     max-width: 50%;
 }
@@ -32,6 +37,7 @@
     color: rgba(109, 149, 252, 1);
 }
 
+/* List style for contact details */
 .contact-info {
     list-style: none;
     padding: 0;
@@ -49,15 +55,17 @@
     color: rgba(109, 149, 252, 1);
 }
 
+/* Form section styles */
 .footer-form {
     flex: 1;
     background-color: #131313;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    max-width: 40%;
+    max-width: 40%; /* Adjusted for large screens */
 }
 
+/* Form elements styling */
 .footer-form form {
     display: flex;
     flex-direction: column;
@@ -89,5 +97,42 @@
 }
 
 .footer-form button:hover {
-    background-color: rgba(109, 149, 252, 1);
+    background-color: #3579e6;
+}
+
+/* Media queries for responsiveness */
+
+/* Tablet view (below 1024px) */
+@media (max-width: 1024px) {
+    .footer-contact {
+        max-width: 100%;
+    }
+
+    .footer-form {
+        max-width: 100%;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Mobile view (below 768px) */
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer-contact h2 {
+        font-size: 28px;
+    }
+
+    .footer-form button {
+        padding: 12px;
+    }
+
+    .footer-form textarea {
+        height: 120px;
+    }
 }

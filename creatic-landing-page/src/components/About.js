@@ -1,21 +1,31 @@
 import React from 'react';
-import './AboutSection.css';
+import './AboutSection.css'
+import robotImage from '../assets/robot-image.png'; // Adjust path as necessary
 
-const AboutSection = () => (
-  <section class="about-us">
-  <div class="container">
-      <div class="about-content">
-          <div class="about-text">
-              <h3>About Us</h3>
-              <h2>We Bring <span class="highlight">Creative</span> Ideas To Life.</h2>
-              <p class="subtitle">We Love Creating</p>
-              <p>Lorem ipsum Neque porro quisquam est qui do lorem ipsum quia dolor sit amet, Neque porro elit Neque porro lorem ipsum Neque porro Neque porro.</p>
-              <p>Neque porro quisquam est qui do lorem ipsum quia dolor sit amet, Lorem ipsum Neque quis ipsum.</p>
-              <button>Read more</button>
-          </div>
+const AboutUs = () => {
+  return (
+    <section className="about-us">
+      <div className="robot-image">
+        <img src={robotImage} alt="Robot" />
       </div>
-  </div>
-</section>
-);
+      <div className="about-text">
+        <h3>ABOUT US</h3>
+        <h2>
+          We Bring <span className="highlight">Creative</span> Ideas To Life.
+        </h2>
+        <p className="subtitle">We Love Creating</p>
+        <p>
+          Lorem ipsum Neque porro quisquam est qui do lorem ipsum quia dolor sit
+          amet, Neque porro Neque porro.
+        </p>
+        <p>
+          Neque porro quisquam est qui do lorem ipsum quia dolor sit amet, Lorem
+          ipsum Neque quis ipsum.
+        </p>
+        <button>Read More</button>
+      </div>
+    </section>
+  );
+};
 
-export default AboutSection;
+export default AboutUs;

@@ -1,46 +1,44 @@
-.hero {
-  padding: 80px 0;
-  background-color: #0a0a0a;
-  padding: 150px 0px;
-  background-image: url('../assets/hero-image.jpg');
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
-  padding-top:200px;
-  margin-left: 0px;
+/* General Styling */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  min-height: 100vh; /* Full viewport height */
+  padding: 0 100px;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-.hero .container {
+.hero-text {
+  color: #fff;
   max-width: 600px;
-  margin-left: 150px;
+  padding: 0 20px;
 }
 
-.hero h2 {
-  font-size: 21px;
-  font-weight: 500;
-  color: rgba(109, 149, 252, 1);
-}
-
-.hero h1 {
-  font-size: 48px;
-  margin: 10px 0;
-}
-
-.hero h1 span {
-  color: rgba(109, 149, 252, 1);
-}
-
-.hero p {
+.hero-text h3 {
   font-size: 18px;
-  line-height: 1.5;
-  color: #aaa;
+  color: rgba(109, 149, 252, 1);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
 }
 
-.hero .btn {
+.hero-text h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 .highlight {
+  color: rgba(109, 149, 252, 1);
+}
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+button {
   display: inline-block;
   padding: 12px 30px;
   background-color: transparent;
@@ -53,8 +51,49 @@
   transition: all 0.3s ease;
 }
 
-.hero .btn:hover {
+button:hover {
   background-color: rgba(109, 149, 252, 1);
   color: #fff;
+}
 
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Styling */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    /* align-items: flex-start; */
+    text-align: left;
+    padding: 50px;
+  }
+
+  .hero-image {
+    margin-bottom: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 48px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  button {
+    padding: 10px 25px;
+  }
 }

@@ -1,12 +1,23 @@
 .projects-section {
-  background-color: #000;
+  background-color: #0a0a0a;
+  padding: 100px;
   text-align: center;
-  padding: 50px 20px;
   color: #fff;
 }
 
+.projects-section h2 {
+  font-size: 40px;
+  line-height: 1.3;
+  margin-bottom: 50px;
+  /* min-width: 600px; */
+}
+
 .projects-section .highlight {
-  color: #3366ff;
+  color: rgba(109, 149, 252, 1);
+}
+
+.projects-section p{
+  color: rgba(109, 149, 252, 1);
 }
 
 .projects-gallery {
