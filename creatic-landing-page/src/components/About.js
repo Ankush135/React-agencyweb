@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutSection.css'
-import robotImage from '../assets/robot-image.png'; // Adjust path as necessary
+import robotImage from '../assets/robot-image.png'; 
 
 const AboutUs = () => {
   return (

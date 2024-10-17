@@ -1,4 +1,3 @@
-// src/components/Projects.js
 import React from 'react';
 import './Projects.css';
 import leftImage from '../assets/left-image.png'

@@ -1,13 +1,10 @@
-/* General Styling */
 .about-us {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal columns */
   display: flex;
   justify-content: space-between;
   align-items: center; 
   background-color: #000000;
   padding: 0px 100px;
-  min-height: 100vh; /* Ensure full-screen height */
+  min-height: 100vh; 
 }
 
 .robot-image {
@@ -75,15 +72,10 @@ button:hover {
   color: #fff;
 }
 
-/* Responsive Styling */
 
-/* Tablet View */
 @media (max-width: 1024px) {
   .about-us {
-    /* grid-template-columns: 1fr; One column layout */
-    /* text-align: center; */
     flex-direction: column;
-    /* align-items: flex-start; */
     text-align: left;
     padding: 50px;
   }
@@ -97,7 +89,6 @@ button:hover {
   }
 }
 
-/* Mobile View */
 @media (max-width: 768px) {
   .about-text h2 {
     font-size: 28px;

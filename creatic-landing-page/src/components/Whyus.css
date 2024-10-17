@@ -1,10 +1,8 @@
-/* General Styling */
 .why-us {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #000000;
-    /* min-height: 100vh; Full viewport height */
     padding: 100px;
   }
   
@@ -50,8 +48,6 @@
   }
 
   .why-us-list {
-    /* list-style-type: none; */
-    /* display: flex; */
     justify-content:flex-start;
     align-items: center;
     padding: 0;
@@ -62,12 +58,9 @@
     font-size: 1.2rem;
   }
   
-  /* Responsive Styling */
   
-  /* Tablet View */
   @media (max-width: 1024px) {
     .why-us {
-      /* grid-template-columns: 1fr; One column layout */
       flex-direction: column;
       text-align: left;
       padding: 50px;
@@ -86,7 +79,6 @@
     
   
   
-  /* Mobile View */
   @media (max-width: 768px) {
     .hero-text h1 {
       font-size: 36px;
