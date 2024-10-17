@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-agencyweb/static/css/main.ae76d043.css",
+    "main.css": "/React-agencyweb/static/css/main.d78304eb.css",
     "main.js": "/React-agencyweb/static/js/main.60c63cac.js",
     "static/js/453.074b2209.chunk.js": "/React-agencyweb/static/js/453.074b2209.chunk.js",
     "static/media/center.png": "/React-agencyweb/static/media/center.0963de2ae96730b7430e.png",
@@ -11,12 +11,12 @@
     "static/media/leftw.png": "/React-agencyweb/static/media/leftw.4838e088d310e1dc943f.png",
     "static/media/robot-image.png": "/React-agencyweb/static/media/robot-image.95f215b143f453a745cb.png",
     "index.html": "/React-agencyweb/index.html",
-    "main.ae76d043.css.map": "/React-agencyweb/static/css/main.ae76d043.css.map",
+    "main.d78304eb.css.map": "/React-agencyweb/static/css/main.d78304eb.css.map",
     "main.60c63cac.js.map": "/React-agencyweb/static/js/main.60c63cac.js.map",
     "453.074b2209.chunk.js.map": "/React-agencyweb/static/js/453.074b2209.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae76d043.css",
+    "static/css/main.d78304eb.css",
     "static/js/main.60c63cac.js"
   ]
 }
