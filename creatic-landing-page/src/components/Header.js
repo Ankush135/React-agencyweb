@@ -16,6 +16,7 @@ const Header = () => {
           <p>CREATIVE AGENCY</p>
         </div>
 
+        {/* Toggling the 'show' class based on the state */}
         <nav className={`nav ${isMenuOpen ? 'show' : ''}`}>
           <ul>
             <li><a href="#home">Home</a></li>
@@ -27,6 +28,7 @@ const Header = () => {
           </ul>
         </nav>
 
+        {/* Hamburger icon for mobile menu */}
         <div className="menu-icon" onClick={handleMenuToggle}>
           <span></span>
           <span></span>

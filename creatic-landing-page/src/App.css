@@ -51,19 +51,21 @@ body, html {
 
 /* Button Styling */
 button {
+  display: inline-block;
+  padding: 12px 30px;
   background-color: transparent;
-  border: 1px solid #61dafb;
-  padding: 10px 20px;
+  border: 2px solid rgba(109, 149, 252, 1);
+  color: rgba(109, 149, 252, 1);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
   border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px;
-  color: #61dafb;
-  margin-top: 20px;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #61dafb;
-  color: #000;
+  background-color: rgba(109, 149, 252, 1);
+  color: #fff;
 }
 
 /* Responsive Image */

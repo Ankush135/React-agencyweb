@@ -1,3 +1,4 @@
+/* Base container for the header */
 .container {
   width: 80%;
   margin: 0 auto;
@@ -7,12 +8,14 @@
   padding: 20px 0;
 }
 
+/* Header base styles */
 .header {
   background-color: #000;
   position: relative;
   z-index: 10;
 }
 
+/* Logo styling */
 .logo {
   display: flex;
   align-items: center;
@@ -32,6 +35,7 @@
   color: #aaa;
 }
 
+/* Navigation menu styling */
 .nav ul {
   list-style: none;
   display: flex;
@@ -54,6 +58,7 @@
   color: rgba(109, 149, 252, 1);
 }
 
+/* Hamburger menu icon for mobile */
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -68,33 +73,44 @@
   transition: 0.3s ease-in-out;
 }
 
+/* Responsive design for tablets and smaller screens */
 @media (max-width: 1024px) {
   .container {
     width: 90%;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
+  /* Hide the navigation by default */
   .nav {
-    display: none; 
-    width: 100%;
+    display: none;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     margin-top: 10px;
   }
 
+  /* Show navigation when 'show' class is added */
   .nav.show {
-    display: flex; 
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
   }
 
   .nav ul li {
     margin: 10px 0;
   }
 
+  /* Display the hamburger menu on smaller screens */
   .menu-icon {
     display: block;
   }
 }
 
+/* Adjustments for mobile (768px and below) */
 @media (max-width: 768px) {
   .logo h1 {
     font-size: 28px;
@@ -107,5 +123,11 @@
 
   .nav ul li a {
     font-size: 14px;
+  }
+
+  /* Further reduce the hamburger menu size */
+  .menu-icon span {
+    width: 20px;
+    height: 2px;
   }
 }
